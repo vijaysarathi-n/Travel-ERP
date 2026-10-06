@@ -1,0 +1,33 @@
+/* ===== Voyara ERP — Design Tokens ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root{
+  /* Brand */
+  --navy-900:#071427; --navy-800:#0B1F3A; --navy-700:#13305A; --navy-600:#1D4277; --navy-500:#2A5598;
+  --blue-500:#3B82F6; --blue-400:#60A5FA; --blue-100:#DBEAFE; --blue-50:#EFF6FF;
+  --teal-600:#0D9488; --teal-500:#14B8A6; --teal-100:#CCFBF1; --teal-50:#F0FDFA;
+  /* Neutrals */
+  --gray-900:#0F172A; --gray-800:#1E293B; --gray-700:#334155; --gray-600:#475569; --gray-500:#64748B;
+  --gray-400:#94A3B8; --gray-300:#CBD5E1; --gray-200:#E2E8F0; --gray-100:#F1F5F9; --gray-50:#F8FAFC; --white:#fff;
+  /* Semantic */
+  --success:#16A34A; --success-bg:#DCFCE7; --warning:#D97706; --warning-bg:#FEF3C7;
+  --danger:#DC2626; --danger-bg:#FEE2E2; --info:#2563EB; --info-bg:#DBEAFE; --purple:#7C3AED; --purple-bg:#EDE9FE;
+  --primary:var(--navy-800); --primary-hover:var(--navy-700); --accent:var(--teal-500);
+  --bg:#F5F7FB; --surface:#fff; --border:var(--gray-200); --text:var(--gray-900); --text-muted:var(--gray-500);
+  /* Typography */
+  --font:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --fs-xs:11px; --fs-sm:12.5px; --fs-base:14px; --fs-md:15px; --fs-lg:18px; --fs-xl:22px; --fs-2xl:28px; --fs-3xl:36px;
+  --fw-regular:400; --fw-medium:500; --fw-semibold:600; --fw-bold:700; --lh-tight:1.25; --lh:1.5;
+  /* Spacing (4px grid) */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:20px; --sp-6:24px; --sp-8:32px; --sp-10:40px; --sp-12:48px;
+  /* Radius */
+  --r-sm:6px; --r-md:10px; --r-lg:14px; --r-xl:20px; --r-full:999px;
+  /* Shadows */
+  --sh-xs:0 1px 2px rgba(15,23,42,.05);
+  --sh-sm:0 1px 3px rgba(15,23,42,.06),0 1px 2px rgba(15,23,42,.04);
+  --sh-md:0 4px 12px -2px rgba(15,23,42,.08),0 2px 4px -2px rgba(15,23,42,.04);
+  --sh-lg:0 16px 40px -8px rgba(11,31,58,.18);
+  --ring:0 0 0 3px rgba(59,130,246,.22);
+  /* Motion */
+  --ease:cubic-bezier(.2,.8,.2,1); --dur:.18s;
+  --sidebar-w:248px; --header-h:64px;
+}

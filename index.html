@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard · Voyara Travel ERP</title><link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="css/app.css"><script src="js/chart.umd.min.js"></script><script src="js/app.js"></script></head>
+<body data-page="dashboard" data-crumbs="Overview|Dashboard"><div id="content">
+<div class="page-head"><div><h1>Good morning, Sailesh</h1><p>Here’s what’s happening across Wanderlust Holidays today · Mon, 5 Oct 2026</p></div>
+<div class="actions"><div class="seg"><a>Today</a><a>7D</a><a class="active">30D</a><a>QTD</a><a>YTD</a></div><button class="btn btn-secondary" data-i="download">Export</button><a class="btn btn-primary" href="bookings.html" data-i="plus">New Booking</a></div></div>
+<div class="grid g6">
+ <div class="card kpi hover"><div class="ic navy" data-i="inbox"></div><div class="lbl">New Enquiries</div><div class="val">482</div><div class="trend up">▲ 12.4%<span>vs last 30d</span></div></div>
+ <div class="card kpi hover"><div class="ic teal" data-i="ticket"></div><div class="lbl">Active Bookings</div><div class="val">1,236</div><div class="trend up">▲ 8.1%<span>vs last 30d</span></div></div>
+ <div class="card kpi hover"><div class="ic purple" data-i="plane"></div><div class="lbl">Upcoming Tours</div><div class="val">68</div><div class="trend up">▲ 5<span>next 30 days</span></div></div>
+ <div class="card kpi hover"><div class="ic green" data-i="rupee"></div><div class="lbl">Revenue (MTD)</div><div class="val">₹2.84 Cr</div><div class="trend up">▲ 18.6%<span>vs Sep</span></div></div>
+ <div class="card kpi hover"><div class="ic amber" data-i="wallet"></div><div class="lbl">Pending Payments</div><div class="val">₹46.2 L</div><div class="trend down">▼ 37 due<span>9 overdue</span></div></div>
+ <div class="card kpi hover"><div class="ic red" data-i="users"></div><div class="lbl">Total Customers</div><div class="val">18,940</div><div class="trend up">▲ 642<span>new this month</span></div></div>
+</div>
+<div class="grid g-2-1 mt">
+ <div class="card"><div class="card-h"><div><h3>Revenue overview</h3><p>Gross booking value vs collections, FY 2026–27</p></div><div class="seg"><a class="active">Monthly</a><a>Weekly</a></div></div><div class="card-b"><div class="chart-box"><canvas id="rev"></canvas></div></div></div>
+ <div class="card"><div class="card-h"><div><h3>Enquiry conversion funnel</h3><p>Last 30 days</p></div></div><div class="card-b funnel">
+  <div class="row"><div class="lbl">Enquiries</div><div class="f" style="width:100%;background:var(--navy-800)">482</div></div>
+  <div class="row"><div class="lbl">Contacted</div><div class="f" style="width:84%;background:var(--navy-600)">405</div></div>
+  <div class="row"><div class="lbl">Quote sent</div><div class="f" style="width:63%;background:var(--navy-500)">304</div></div>
+  <div class="row"><div class="lbl">Negotiation</div><div class="f" style="width:41%;background:var(--blue-500)">198</div></div>
+  <div class="row"><div class="lbl">Booked</div><div class="f" style="width:28%;background:var(--teal-500)">136</div></div>
+  <div class="divider"></div><div style="display:flex;justify-content:space-between"><div><div class="muted small">Conversion rate</div><b style="font-size:20px">28.2%</b> <span class="trend up">▲ 3.1pt</span></div><div><div class="muted small">Avg. response time</div><b style="font-size:20px">42 min</b></div></div>
+ </div></div>
+</div>
+<div class="grid g3 mt">
+ <div class="card"><div class="card-h"><div><h3>Booking trends</h3><p>Domestic vs International</p></div></div><div class="card-b"><div class="chart-box" style="height:240px"><canvas id="trend"></canvas></div></div></div>
+ <div class="card"><div class="card-h"><div><h3>Top destinations</h3><p>By bookings, last 90 days</p></div></div><div class="card-b"><div class="chart-box" style="height:240px"><canvas id="dest"></canvas></div></div></div>
+ <div class="card"><div class="card-h"><h3>Upcoming departures</h3><a class="btn btn-ghost btn-sm" href="bookings.html">View all</a></div><div class="card-b flush">
+  <div class="list-item"><img class="table thumb" style="width:44px;height:44px;border-radius:10px;object-fit:cover" src="img/kashmir.jpg"><div class="grow"><b>Amorous Kashmir 5N/6D</b><span>Srinagar · Gulmarg · Pahalgam</span></div><div style="text-align:right"><b>08 Oct</b><span class="badge b-green">18/20 pax</span></div></div>
+  <div class="list-item"><img style="width:44px;height:44px;border-radius:10px;object-fit:cover" src="img/dubai.jpg"><div class="grow"><b>Dubai Delight 4N/5D</b><span>Dubai · Abu Dhabi</span></div><div style="text-align:right"><b>12 Oct</b><span class="badge b-amber">Visa 3 pending</span></div></div>
+  <div class="list-item"><img style="width:44px;height:44px;border-radius:10px;object-fit:cover" src="img/kerala.jpg"><div class="grow"><b>Kerala Backwaters 5N/6D</b><span>Kochi · Munnar · Alleppey</span></div><div style="text-align:right"><b>14 Oct</b><span class="badge b-green">24/26 pax</span></div></div>
+  <div class="list-item"><img style="width:44px;height:44px;border-radius:10px;object-fit:cover" src="img/bali.jpg"><div class="grow"><b>Bali Bliss 6N/7D</b><span>Ubud · Kuta · Nusa Penida</span></div><div style="text-align:right"><b>17 Oct</b><span class="badge b-blue">12/16 pax</span></div></div>
+ </div></div>
+</div>
+<div class="grid g-2-1 mt">
+ <div class="card"><div class="card-h"><div><h3>Recent bookings</h3><p>Latest 6 confirmed &amp; pending bookings</p></div><a class="btn btn-secondary btn-sm" href="bookings.html">All bookings</a></div><div class="table-wrap"><table class="table"><thead><tr><th>Booking</th><th>Customer</th><th>Package</th><th>Travel date</th><th class="num">Amount</th><th>Status</th></tr></thead><tbody>
+  <tr><td class="strong">BK-24817</td><td><div class="who"><div class="avatar sm">AI</div><b>Ananya Iyer</b></div></td><td>Maldives Overwater 4N</td><td>22 Nov 2026</td><td class="num mono strong">₹3,48,000</td><td><span class="badge b-green">Confirmed</span></td></tr>
+  <tr><td class="strong">BK-24816</td><td><div class="who"><div class="avatar sm" style="background:var(--teal-100);color:var(--teal-600)">RM</div><b>Rohan Mehta</b></div></td><td>Majestic Rajasthan 6N</td><td>02 Nov 2026</td><td class="num mono strong">₹1,26,400</td><td><span class="badge b-amber">Partially paid</span></td></tr>
+  <tr><td class="strong">BK-24815</td><td><div class="who"><div class="avatar sm" style="background:var(--purple-bg);color:var(--purple)">PN</div><b>Priya Nair</b></div></td><td>Europe Highlights 9N</td><td>15 Dec 2026</td><td class="num mono strong">₹6,92,000</td><td><span class="badge b-green">Confirmed</span></td></tr>
+  <tr><td class="strong">BK-24814</td><td><div class="who"><div class="avatar sm" style="background:var(--warning-bg);color:var(--warning)">VS</div><b>Vikram Singh</b></div></td><td>Pretty Goa 3N/4D</td><td>10 Oct 2026</td><td class="num mono strong">₹38,500</td><td><span class="badge b-blue">On hold</span></td></tr>
+  <tr><td class="strong">BK-24813</td><td><div class="who"><div class="avatar sm">KR</div><b>Kavya Reddy</b></div></td><td>Andaman Escape 5N</td><td>28 Oct 2026</td><td class="num mono strong">₹92,800</td><td><span class="badge b-green">Confirmed</span></td></tr>
+  <tr><td class="strong">BK-24812</td><td><div class="who"><div class="avatar sm" style="background:var(--danger-bg);color:var(--danger)">AG</div><b>Arjun Gupta</b></div></td><td>Thailand Fiesta 5N</td><td>19 Oct 2026</td><td class="num mono strong">₹74,200</td><td><span class="badge b-red">Cancelled</span></td></tr>
+ </tbody></table></div></div>
+ <div class="card"><div class="card-h"><h3>Top-selling packages</h3><span class="muted small">This quarter</span></div><div class="card-b" style="display:flex;flex-direction:column;gap:16px">
+  <div><div style="display:flex;justify-content:space-between;margin-bottom:6px"><b class="small" style="font-size:13px">Kerala Backwaters 5N/6D</b><span class="small strong">214 · ₹68.4L</span></div><div class="bar"><i style="width:92%"></i></div></div>
+  <div><div style="display:flex;justify-content:space-between;margin-bottom:6px"><b style="font-size:13px">Amorous Kashmir 5N/6D</b><span class="small strong">186 · ₹52.1L</span></div><div class="bar"><i style="width:80%"></i></div></div>
+  <div><div style="display:flex;justify-content:space-between;margin-bottom:6px"><b style="font-size:13px">Dubai Delight 4N/5D</b><span class="small strong">171 · ₹97.5L</span></div><div class="bar"><i style="width:74%"></i></div></div>
+  <div><div style="display:flex;justify-content:space-between;margin-bottom:6px"><b style="font-size:13px">Bali Bliss 6N/7D</b><span class="small strong">142 · ₹1.04Cr</span></div><div class="bar"><i style="width:62%"></i></div></div>
+  <div><div style="display:flex;justify-content:space-between;margin-bottom:6px"><b style="font-size:13px">Pretty Goa 3N/4D</b><span class="small strong">128 · ₹19.8L</span></div><div class="bar"><i style="width:55%"></i></div></div>
+ </div></div>
+</div>
+<div class="card mt"><div class="card-h"><div><h3>Pending payments</h3><p>Balance due before departure</p></div><a class="btn btn-secondary btn-sm" href="payments.html">Go to payments</a></div><div class="table-wrap"><table class="table"><thead><tr><th>Invoice</th><th>Customer</th><th>Package</th><th>Due date</th><th class="num">Total</th><th class="num">Balance</th><th>Status</th><th></th></tr></thead><tbody>
+ <tr><td class="strong">INV-10482</td><td>Rohan Mehta</td><td>Majestic Rajasthan 6N</td><td>12 Oct 2026</td><td class="num mono">₹1,26,400</td><td class="num mono strong">₹76,400</td><td><span class="badge b-amber">Due in 7d</span></td><td><button class="btn btn-soft btn-sm" data-toast="Reminder sent|WhatsApp + email reminder sent to Rohan Mehta">Send reminder</button></td></tr>
+ <tr><td class="strong">INV-10477</td><td>Sneha Kapoor</td><td>Swiss Alps & Paris 8N</td><td>01 Oct 2026</td><td class="num mono">₹5,64,000</td><td class="num mono strong">₹2,82,000</td><td><span class="badge b-red">Overdue 4d</span></td><td><button class="btn btn-soft btn-sm" data-toast="Reminder sent|WhatsApp + email reminder sent to Sneha Kapoor">Send reminder</button></td></tr>
+ <tr><td class="strong">INV-10471</td><td>Mohammed Faiz</td><td>Dubai Delight 4N/5D</td><td>08 Oct 2026</td><td class="num mono">₹2,30,000</td><td class="num mono strong">₹1,15,000</td><td><span class="badge b-amber">Due in 3d</span></td><td><button class="btn btn-soft btn-sm" data-toast="Reminder sent|WhatsApp + email reminder sent to Mohammed Faiz">Send reminder</button></td></tr>
+</tbody></table></div></div>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const ctx=document.getElementById('rev').getContext('2d'),g=ctx.createLinearGradient(0,0,0,280);g.addColorStop(0,'rgba(20,184,166,.22)');g.addColorStop(1,'rgba(20,184,166,0)');
+ new Chart(ctx,{type:'bar',data:{labels:['Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar'],datasets:[
+  {type:'line',label:'Collections',data:[118,142,128,96,104,182,214,null,null,null,null,null],borderColor:'#14B8A6',backgroundColor:g,fill:true,tension:.4,pointRadius:3,pointBackgroundColor:'#fff',borderWidth:2.5},
+  {label:'Gross booking value',data:[142,168,151,112,124,226,284,312,368,296,214,232],backgroundColor:(c)=>c.dataIndex>6?'#DBE4F0':'#0B1F3A',borderRadius:6,barPercentage:.55}]},
+  options:{maintainAspectRatio:false,plugins:{legend:{position:'top',align:'end'},tooltip:{callbacks:{label:c=>c.dataset.label+': ₹'+c.raw+' L'}}},scales:{x:{grid:{display:false}},y:{grid:{color:'#F1F5F9'},border:{display:false},ticks:{callback:v=>'₹'+v+'L'}}}}});
+ new Chart(document.getElementById('trend'),{type:'line',data:{labels:['W1','W2','W3','W4','W5','W6','W7','W8'],datasets:[{label:'Domestic',data:[62,71,68,84,90,88,102,110],borderColor:'#0B1F3A',tension:.4,pointRadius:0,borderWidth:2.5},{label:'International',data:[34,38,45,41,52,60,58,71],borderColor:'#14B8A6',tension:.4,pointRadius:0,borderWidth:2.5,borderDash:[5,4]}]},options:{maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{x:{grid:{display:false}},y:{grid:{color:'#F1F5F9'},border:{display:false}}}}});
+ new Chart(document.getElementById('dest'),{type:'doughnut',data:{labels:['Kerala','Kashmir','Dubai','Bali','Goa','Others'],datasets:[{data:[22,18,16,13,11,20],backgroundColor:['#0B1F3A','#2A5598','#14B8A6','#60A5FA','#99F6E4','#CBD5E1'],borderWidth:2,borderColor:'#fff'}]},options:{maintainAspectRatio:false,cutout:'68%',plugins:{legend:{position:'right'}}}});
+});
+</script>
+</div></body></html>

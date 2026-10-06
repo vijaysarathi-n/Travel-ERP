@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create Package · Voyara Travel ERP</title><link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="css/app.css"><script src="js/app.js"></script></head>
+<body data-page="packages" data-crumbs="Products|Tour Packages|Create Package"><div id="content">
+<div class="page-head"><div><h1>Create tour package</h1><p>Build a sellable package with pricing, itinerary, inclusions and media.</p></div><div class="actions"><button class="btn btn-secondary" data-toast="Draft saved|Package saved as draft">Save draft</button><button class="btn btn-primary" data-toast="Package published|Kerala Monsoon Retreat is now live" data-i="check">Publish</button></div></div>
+<div class="grid g-2-1">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div class="card"><div class="card-h"><div><h3>1. Basic information</h3><p>Title, destinations and category</p></div></div><div class="card-b form-grid">
+<div class="field full"><label>Package title *</label><input class="input" value="Kerala Monsoon Retreat"></div>
+<div class="field"><label>Category</label><select class="select"><option>Domestic · Leisure</option><option>Honeymoon</option><option>Pilgrimage</option></select></div>
+<div class="field"><label>Package code</label><input class="input" value="KER-MON-05"></div>
+<div class="field full"><label>Destinations / route</label><input class="input" value="Kochi → Munnar → Thekkady → Alleppey → Kochi"><span class="hint">Separate stops with arrows; used to build the day-wise itinerary.</span></div>
+<div class="field"><label>Nights</label><input class="input" value="5"></div><div class="field"><label>Days</label><input class="input" value="6"></div>
+<div class="field full"><label>Overview</label><textarea class="input">Misty tea gardens of Munnar, spice trails of Thekkady and an overnight private houseboat cruise on the Alleppey backwaters.</textarea></div></div></div>
+<div class="card"><div class="card-h"><div><h3>2. Pricing (INR)</h3><p>Per person on twin sharing; GST 5% extra</p></div></div><div class="card-b form-grid">
+<div class="field"><label>Standard (3★)</label><input class="input" value="₹18,900"></div><div class="field"><label>Deluxe (4★)</label><input class="input" value="₹24,500"></div>
+<div class="field"><label>Luxury (5★)</label><input class="input" value="₹38,750"></div><div class="field"><label>Child with bed</label><input class="input" value="₹12,500"></div>
+<div class="field"><label>Valid from</label><input class="input" value="01 Jun 2026"></div><div class="field"><label>Valid to</label><input class="input invalid" value="31 May 2026"><span class="err">End date must be after start date.</span></div></div></div>
+<div class="card"><div class="card-h"><div><h3>3. Day-wise itinerary</h3><p>Drag to reorder days</p></div><button class="btn btn-soft btn-sm" data-i="plus">Add day</button></div><div class="card-b" style="display:flex;flex-direction:column;gap:10px">
+<div class="card" style="box-shadow:none;padding:12px 14px;display:flex;gap:12px;align-items:center"><span class="muted" data-i="grip"></span><span class="badge b-navy nodot">Day 1</span><b style="flex:1">Arrive Kochi · Transfer to Munnar (130 km)</b><span class="muted small">Hotel · Dinner</span><button class="btn btn-ghost btn-icon btn-sm" data-i="edit"></button></div>
+<div class="card" style="box-shadow:none;padding:12px 14px;display:flex;gap:12px;align-items:center"><span class="muted" data-i="grip"></span><span class="badge b-navy nodot">Day 2</span><b style="flex:1">Munnar sightseeing · Eravikulam, Mattupetty</b><span class="muted small">B · D</span><button class="btn btn-ghost btn-icon btn-sm" data-i="edit"></button></div>
+<div class="card" style="box-shadow:none;padding:12px 14px;display:flex;gap:12px;align-items:center"><span class="muted" data-i="grip"></span><span class="badge b-navy nodot">Day 3</span><b style="flex:1">Munnar → Thekkady · Spice plantation walk</b><span class="muted small">B · D</span><button class="btn btn-ghost btn-icon btn-sm" data-i="edit"></button></div>
+<div class="card" style="box-shadow:none;padding:12px 14px;display:flex;gap:12px;align-items:center"><span class="muted" data-i="grip"></span><span class="badge b-navy nodot">Day 4</span><b style="flex:1">Thekkady → Alleppey · Overnight houseboat</b><span class="muted small">B · L · D</span><button class="btn btn-ghost btn-icon btn-sm" data-i="edit"></button></div></div></div>
+<div class="card"><div class="card-h"><h3>4. Inclusions &amp; exclusions</h3></div><div class="card-b form-grid">
+<div class="field"><label>Inclusions</label><textarea class="input" rows="5">5 nights accommodation
+Daily breakfast & dinner
+Private AC Innova for transfers
+Houseboat with all meals
+Driver allowance, tolls, parking</textarea></div>
+<div class="field"><label>Exclusions</label><textarea class="input" rows="5">Airfare / train fare
+Entry & camera fees
+Lunch (except houseboat)
+GST 5% & TCS
+Personal expenses</textarea></div></div></div></div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div class="card"><div class="card-h"><h3>Media</h3></div><div class="card-b"><div style="border:2px dashed var(--gray-300);border-radius:12px;padding:26px;text-align:center;background:var(--gray-50)"><div class="ic navy" style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;margin:0 auto 10px" data-i="upload"></div><b>Drop images here</b><p class="muted small">JPG/PNG up to 5 MB · min 1600px wide</p></div>
+<div class="gallery" style="grid-template-columns:repeat(3,1fr);margin-top:12px"><img src="img/kerala.jpg" style="height:70px"><img src="img/resort.jpg" style="height:70px"><img src="img/hotel.jpg" style="height:70px"></div></div></div>
+<div class="card"><div class="card-h"><h3>Visibility</h3></div><div class="card-b" style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;justify-content:space-between;align-items:center"><span>Publish on website</span><label class="switch"><input type="checkbox" checked><i></i></label></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><span>Available to B2B agents</span><label class="switch"><input type="checkbox" checked><i></i></label></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><span>Featured package</span><label class="switch"><input type="checkbox"><i></i></label></div>
+<div class="field"><label>Tags</label><div class="tags" style="margin:0"><span class="badge b-blue nodot">Backwaters</span><span class="badge b-blue nodot">Hill station</span><span class="badge b-blue nodot">Family</span><span class="badge b-gray nodot">+ Add</span></div></div></div></div>
+<div class="card" style="background:var(--navy-800);color:#fff;border:0"><div class="card-b"><div style="opacity:.7;font-size:12px">Estimated margin (Deluxe)</div><div style="font-size:26px;font-weight:700">₹5,860 <span style="font-size:13px;color:var(--teal-500)">23.9%</span></div><div class="progress" style="margin-top:12px"><i style="width:24%"></i></div><p style="opacity:.7;font-size:12px;margin-top:10px">Supplier cost ₹18,640 pp · hotel + transport + houseboat</p></div></div>
+</div></div>
+</div></body></html>
